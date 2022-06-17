@@ -1,29 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>HeTeMaLeCSS</title>
 </head>
+
 <body>
-    <header>
+    <div class="intro">
         <h1>HeTeMaLeCSS</h1>
-        <div class="sidebar">
-<ul>
-    <li>
-       <a href="">Text en grid</a> </li>
-    <li>
-        <a href="">Tables en Lists</a> </li>
-    <li>
-        <a href="">Forms</a> </li>
-    <li>
-        <a href="./border/index.html" target="_blank">Borders</a> </li>
-</ul>
+        <p>
+            HeTeMaLeCSS? vertaling in het Algemeen Nederlands: Heeft deze website alles wat er bestaat op het gebied van HTML en CSS? <br>
+            Die pretentie heb ik niet, maar ik heb geprobeerd om op een overzichtelijke manier zo veel mogelijk te
+            tonen.
+            <br>
+            <br>
+            Een eerste kennismakeing met HTML en CSS begint bij de theorie. Je begint bij de basis en dan ga je meer en
+            meer mogelijkheden ontdekken en uitproberen. Pas als je weet welke elementen er bestaan en welke attributen
+            je kan gebruiken en hoe, kan je ermee gaan eperimenteren om tot leuke designs te komen.
+            <br>
+            Ik heb zoveel mogelijk mogelijkheden gevisualiseerd met de belangrijkste attribuut naam zodat je snel ziet hoe je dit effect kan bekomen.
+            <br>
+            Nu is het aan jou om eruit te zoeken wat je tof vindt en er iets moois mee te maken.
+            <br>
+            <br>
+            Veel succes!
+        </p>
     </div>
-    </header>
-    <main>
-        <iframe src="./border/index.html" frameborder="0" width="700px" height="500px"></iframe>
-    </main>
+
+
+    <div class="bodycontent">
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#text">Text en grid</a>
+                </li>
+                <li>
+                    <a href="#tables">Tables en Lists</a>
+                </li>
+                <li>
+                    <a href="#forms">Forms</a>
+                </li>
+                <li>
+                    <a href="#border" target="_parent">Borders</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="htmls">
+            <div class="htmlItem">
+        <button>
+          <a href="./text en grid/index.html" target="_blank">    Open text en grid in een venster</a></button> 
+          <iframe id="text" src="./text en grid/index.html">
+             </iframe>     
+       </div>
+            <iframe id="tables" src="./tables en lists/index.html" ></iframe>
+            <iframe id="border" src="./border/index.html"></iframe>
+            <iframe id="forms" src="./forms/index.html"></iframe>
+        </div>
+    </div>
+
+    <div class="voorbeelden">
+        <h2>Layout met lists</h2>
+        <iframe src="./Voorbeelden/vb1/index.html" ></iframe>
+    </div>
 </body>
+
 </html>

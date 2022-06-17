@@ -2,13 +2,13 @@ body, html{
     margin: 0;
     padding: 0;
     background-color: #ccc;
-    position : absolute;
-    left: 30%;
 
 }
 .container{
     height: fit-content;
-    margin-top: 200px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 100px;
     padding: 150px;
     border: 4px solid transparent;
     border-image-source: url("https://img.freepik.com/free-vector/painted-background-multicoloured-palette_23-2148427592.jpg?w=2000");
@@ -22,9 +22,9 @@ h1{
     margin-bottom: 50px;
 }
 div{
-    margin: 10px;
-    width: 500px;
-    height: 200px;
+    margin: 50px;
+    width: 400px;
+    height: 100px;
     padding: 10px;
     font-size: 30px;
 }
@@ -49,24 +49,24 @@ div{
     border-top: 15px groove ;
 margin: 0 auto;
     border-radius: 5px;
-    height: 50px;
+    height: 40px;
     position: relative;
     top: 30px;
 }
 h3{
   margin: 0;
   position: relative;
-  left: 240px;
+  left: 160px;
 }
 .div4_2{
     border-right: 15px groove rgb(120,120,120);
     border-bottom: 15px groove rgb(120,120,120);
-    height: 50px;
+    height: 40px;
     margin: 0 auto;
     border-radius: 5px;
     position: relative;
     left: 20px;
-    top: -30px;
+    top: -50px;
 }
 .div5{
     border: 5px double red;

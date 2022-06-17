@@ -1,1 +1,106 @@
-@import "./border/borderStyle.css";
+/* @import "./border/borderStyle.css";
+@import "./forms/styles.css";
+@import "./text en grid/styles.css";
+@import "./tables en lists/styles.css";
+@import "./images/styles.css";
+@import "./video/styles.css"; */
+:root{
+    --kleur1: rgb(140, 110, 245);
+    --kleur2: rgb(10, 94, 133);
+    --kleur3: rgb(10, 24, 150);
+    --kleurBg: rgb(43, 76, 88);
+}
+body{
+   background-color: var(--kleur1);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+margin: 0;
+padding: 0;
+}
+h1{
+    text-align: start;
+    margin-bottom: 50px;
+    color: var(--kleur3);
+    text-shadow: 2px 2px 5px var(--kleur2);
+}
+.intro{
+  position: relative;
+    top: 0;
+  left: 35%;
+    width: 800px;
+}
+.intro p{
+    font-size: 20px;
+    color: var(--kleur3);
+  border: 12px ridge var(--kleur2);
+  margin: 20px auto;
+  border-radius: 5px;
+  padding: 20px;
+}
+.bodycontent{
+    position: relative;
+    width: 98%;
+gap: 1%;
+    margin: 0 auto;
+    display: flex;
+justify-content: flex-end;
+}
+.sidebar{
+    width: 30%;
+    height: 100vh;
+    position: fixed;
+  left: 0;
+    top: 0;
+}
+.sidebar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--kleurBg);
+
+    height: 100%;
+}
+.sidebar a{
+    display: block;
+    text-decoration: none;
+    color: var(--kleur2);
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 800;
+  
+}
+.sidebar li{
+      background-color: var(--kleur1);
+      margin: 20px;
+      border-radius: 20px;
+      text-align: center;
+}
+.htmls{
+    width: 65%;
+
+}
+.htmlItem{
+    position: relative;
+}
+.htmlItem button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--kleur1);
+    color: var(--kleur3);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+}
+iframe{
+    border: 8px solid var(--kleur2);
+width: 100%;
+height: 400px;
+
+}
+.voorbeelden{
+    position: relative;
+ 
+}
