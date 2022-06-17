@@ -66,13 +66,22 @@ justify-content: flex-end;
     padding: 10px;
     font-size: 20px;
     font-weight: 800;
-  
+    transition: all 0.5s linear;
 }
 .sidebar li{
       background-color: var(--kleur1);
       margin: 35px;
       border-radius: 20px;
-      text-align: center;
+      text-align: center;   
+       transition: all 0.5s linear;
+}
+.sidebar li:hover{
+    background-color: var(--kleur2);   
+
+ 
+}
+.sidebar a:hover {
+    color: var(--kleur1);
 }
 .htmls{
     width: 65%;
@@ -80,6 +89,7 @@ position: relative;
 }
 .htmlItem{
     position: relative;
+
 }
 #openHTML{
     position: absolute;
