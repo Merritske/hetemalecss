@@ -16,8 +16,8 @@ body {
     padding: 0;
     background-color: #ccc;
     position: absolute;
-    left: 20%;
-    right: 20%;
+    left: 10%;
+    right: 10%;
 }
 
 .title {
@@ -37,34 +37,35 @@ body {
 #linear-gradient {
     /*ALS JE GEEN PERCENTAGES ZET IS HET FLU*/
     background-image: repeating-linear-gradient(red, yellow, green 10%);
-    height: 500px;
-    width: 500px;
+    height: 200px;
+    width: 200px;
 }
 
 #radial-gradient {
     background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
     /*WERKT ENKEL IN DEZE VERHOUDING*/
-    height: 500px;
-    width: 500px;
+    height: 200px;
+    width: 200px;
 }
 
 #conic-gradient {
     background-image: repeating-conic-gradient(red, yellow 10%, green 15%);
-    height: 500px;
-    width: 500px;
+    height: 200px;
+    width: 200px;
 }
 img {
-    height: 350px;
+  width: 350px;
+  height: 220px;
+  object-fit: cover;
     margin: 20px;
-
 }
 
 #linear {
     display: flex;
     flex-direction: row;
     text-align: center;
-    margin: 20px;
-    padding: 30px;
+width: fit-content;
+    padding-bottom: 30px;
 }
 
 .images {
@@ -175,6 +176,9 @@ img {
 
 .clipsvg {
     clip-path: url("#myClip2");
+    position: relative;
+    bottom: 20px;
+    height: 350px;
 }
 
 #im7 {
@@ -185,8 +189,8 @@ img {
 }
 
 .perspective {
-    height: 400px;
-    width: 400px;
+   width: 400px;
+    height: 300px;
     position: relative;
     left: -200px;
     perspective: 700px;
@@ -205,7 +209,7 @@ img {
 
 .backdrop {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
 }
 
@@ -385,7 +389,7 @@ img {
 
 .objectfit {
     width: 1000px;
-    margin:  50px auto;
+   
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -468,11 +472,10 @@ img {
     background-color: red;
   } */
   .background8{
-      margin: 50px;
-      width:100%;
+      margin: 50px auto;
     background-image: linear-gradient(180deg, black 1%, darkblue 50%, rgb(200, 10,20) 110%);
-    background-image: no-repeat;
-    height:700px;
+    width: 900px;
+    height:500px;
     position: relative;
   }
   .zon2{
@@ -481,7 +484,7 @@ img {
     background-color:rgba(247, 239, 138, 0.8);
     border-radius:50%;
     position:relative;
-    top:200px;
+    top:150px;
     left:300px;
     box-shadow: 0px 0px 10px 20px rgba(223, 238, 135, 0.6)
   }

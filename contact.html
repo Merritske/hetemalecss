@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <title>Contact</title>
+
+    <style>
+        :root{
+    --kleur1: rgb(140, 110, 245);
+    --kleur2: rgb(10, 94, 133);
+    --kleur3: rgb(10, 24, 150);
+    --kleurBg: rgb(43, 76, 88);
+}
+        h1{
+            padding-top: 50px;
+            text-align: center;
+            color: var(--kleur3);
+        }
+        body{
+            background-image: linear-gradient(180deg, var(--kleur1) 10%, var(--kleurBg) 100%);
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        .logo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            margin: 50px;
+        background-color:var(--kleur2);
+        border-radius: 25px;
+        }
+
+        .logo #linkedIn, .logo #github {
+            width: 40px; 
+             padding: 20px; 
+            
+        }
+        .logo #linkedIn:hover, .logo #github:hover{
+            transform: scale(2);
+            background-color: var(--kleur1);
+            border-radius: 50%;
+        }
+
+        .logo #mail {
+            font-size: 30px;
+         padding: 30px;
+            color: var(--kleurBg);
+        }
+        .logo #mail:hover {
+            color: var(--kleur1);
+            transform: scale(2.5);
+        }
+    </style>
+ 
+</head>
+
+<body>
+    <h1>An verbeeck</h1>
+
+    <div class="logo">
+        <a href='https://www.linkedin.com/in/an-verbeeck-161a2a99/ ' target="_blank"><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/1200px-Linkedin_icon.svg.png"
+                alt="linkedIn logo" id="linkedIn" width="30px" /> </a>
+        <a href='https://github.com/Merritske' target="_blank"><img
+                src='https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png' alt="github logo"
+                id="github" width="30px" /> </a>
+        <a href='mailto: merritske@gmail.com'><i class='fa fa-envelope-o' id="mail" onmouseenter={envelopeO}
+                onmouseleave={envelopD}></i> </a>
+
+    </div>
+    <script>
+        function envelopeO() {
+            document.getElementById("mail").classList.remove('fa-envelope-o')
+            document.getElementById("mail").classList.add("fa-envelope-open-o")
+        }
+        function envelopD() {
+            document.getElementById("mail").classList.remove('fa-envelope-open-o')
+            document.getElementById("mail").classList.add("fa-envelope-o")
+        }
+    </script>
+</body>
+
+</html>

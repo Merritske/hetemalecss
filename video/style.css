@@ -12,6 +12,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
     height: 220px;
+
 }
 .transition div>div{
     margin: 10px; 
