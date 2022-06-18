@@ -113,3 +113,125 @@ font-weight: 900;
   .card .back {
     transform: rotateY(180deg);
   }
+  .animations{
+    width: 800px;
+    height: 300px;
+    margin: 50px auto;
+    position: relative;
+  }
+  .bal{
+    background-color: #2db34a;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+  }
+
+  #bal1{
+    animation-name: bal;
+    animation-duration: 5s;
+      animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+  }
+  #bal2{
+    animation-name: bal;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+  }
+  @keyframes bal{
+    0%{
+      transform: translate(0px, 0px);
+      background-color: #2db34a;
+    }
+100%{
+  transform: translate(800px, 0px);
+    background-color: #f6d365;
+
+}
+  }
+  button{
+    background-color: #f86d46;
+    padding: 20px 10px;
+    font-size: 25px;
+    color: white;
+  }
+  button:hover{
+    animation: btn 3s forwards;
+  }
+
+  @keyframes btn {
+    100% {
+      background-color: #5f1705;
+    }
+  }
+  .stars {
+    background-image: linear-gradient(to right, #f6d365 0%, #f8410f 100%);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+  }
+
+  .star-1 {
+    margin-top: 5%;
+    margin-left: 20%;
+    animation-name: twinkle-1;
+    animation-duration: 2s;
+  }
+
+  .star-2 {
+    margin-top: 5%;
+    margin-left:30%;
+    animation-name: twinkle-2;
+    animation-duration: 2s;
+  }
+
+  @keyframes twinkle-1 {
+    50% {
+      transform: scale(0.5);
+      background-image: linear-gradient(to left, #f6d365 0%, #f8410f 100%);
+      opacity: 0.5;
+    }
+  }
+
+  @keyframes twinkle-2 {
+    20% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+  }
+  .around{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #f72213;
+    position: absolute;
+    animation: rond 5s  linear infinite ;
+  }
+  @keyframes rond{
+    0%{
+      top:0%;
+      left:0%;
+    }
+    25%{
+      top:0%;
+      left:100%;
+    }
+    50%{
+      top:100%;
+      left:100%;
+    }
+    75%{
+      top:100%;
+      left:0%;
+    }
+    100%{
+      top:0%;
+      left:0%;
+    }
+  }
