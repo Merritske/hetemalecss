@@ -116,7 +116,7 @@ font-weight: 900;
   .animations{
     width: 800px;
     height: 300px;
-    margin: 50px auto;
+    margin: 50px;
     position: relative;
   }
   .bal{
