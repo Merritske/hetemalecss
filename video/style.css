@@ -183,13 +183,13 @@ font-weight: 900;
 
 }
   }
-  button{
+  .button2{
     background-color: #f86d46;
     padding: 20px 10px;
     font-size: 25px;
     color: white;
   }
-  button:hover{
+  .button2:hover{
     animation: btn 3s forwards;
   }
 
