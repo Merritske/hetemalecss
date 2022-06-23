@@ -34,27 +34,37 @@
             margin: 50px;
         background-color:var(--kleur2);
         border-radius: 25px;
+        height: 150px;
         }
 
         .logo #linkedIn, .logo #github {
-            width: 40px; 
-             padding: 20px; 
-            
-        }
-        .logo #linkedIn:hover, .logo #github:hover{
+            width: 50px; 
+        } 
+          .logo #linkedIn:hover{
             transform: scale(2);
-            background-color: var(--kleur1);
+            box-shadow: 2px 2px 10px black;
+            border-radius: 5px;
+          }
+      .logo #github:hover{
+            transform: scale(2);
+            box-shadow: 2px 2px 10px black;
             border-radius: 50%;
         }
 
         .logo #mail {
-            font-size: 35px;
-         padding: 30px;
+            font-size: 45px;
             color: var(--kleurBg);
         }
         .logo #mail:hover {
-            color: var(--kleur1);
+          text-shadow: 2px 2px 10px black;
             transform: scale(2.5);
+        }
+        a{
+            text-decoration: none;
+            color: var(--kleur3);
+        }
+        a:hover{
+            text-shadow: 0 0 10px black;
         }
     </style>
  
@@ -74,16 +84,9 @@
                 onmouseleave={envelopD}></i> </a>
 
     </div>
-    <script>
-        function envelopeO() {
-            document.getElementById("mail").classList.remove('fa-envelope-o')
-            document.getElementById("mail").classList.add("fa-envelope-open-o")
-        }
-        function envelopD() {
-            document.getElementById("mail").classList.remove('fa-envelope-open-o')
-            document.getElementById("mail").classList.add("fa-envelope-o")
-        }
-    </script>
+ <h1>
+    <a href="https://portfolio-merritske.vercel.app/">Portfolio</a>
+ </h1>
 </body>
 
 </html>
